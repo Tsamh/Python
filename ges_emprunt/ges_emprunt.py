@@ -16,25 +16,9 @@
 
 # trouver_livre("11000")
 
-def prendre_livre():
-    id = input("Entrez l'id du livre à emprunter : ")
-    livre = trouver_livre(id)
-    if livre:
-        nombre = int(input(f"Entrez le nombre de livre à emprunter : "))
-        livre["nombre"] -= nombre
-        print(f"Livre emprunté ! Le livre {livre['Titre']} a maintenant {livre['nombre']} exemplaires dans notre stock !")
-    else:
-        print("Livre introuvable !")
 
-def rendre_livre():
-    id = input("Entrez l'id du livre à rendre: ")
-    livre = trouver_livre(id)
-    if livre:
-        nombre = int(input(f"Entrez le nombre de livre à rendre : "))
-        livre["nombre"] += nombre
-        print(f"Livre rendu ! Le livre {livre['Titre']} a maintenant {livre['nombre']} exemplairs dans notre stock !")
-    else:
-        print("Livre introuvable !")
+
+
 
 
 
